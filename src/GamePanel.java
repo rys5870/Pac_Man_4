@@ -2,6 +2,12 @@ import javax.swing.*;
 import java.awt.*;
 
 public class GamePanel extends JPanel implements Runnable{
+
+    @Override
+    public void setOpaque(boolean isOpaque) {
+        super.setOpaque(isOpaque);
+    }
+
     static final int originalTileSize = 4;
     static final int scale = 4;
     static public final int tileSize = originalTileSize * scale;
